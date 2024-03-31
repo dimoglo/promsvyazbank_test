@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PromsvyazBankTest</string>
+    <string name="update_at_format">Обновлено %1$s</string>
+    <string name="data_timestamp_format">Данные на %1$s</string>
+</resources>

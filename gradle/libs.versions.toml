@@ -1,0 +1,58 @@
+[versions]
+agp = "8.3.1"
+kotlin = "1.9.0"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+activity = "1.8.2"
+constraintlayout = "2.1.4"
+realm = "1.13.0"
+daggerHilt = "2.48"
+navigstionVersion = "2.7.7"
+retrofit2 = "2.9.0"
+okhttp = "5.0.0-alpha.2"
+okhttpAlpha = "4.10.0"
+coroutinesVersion = "1.8.0"
+lifecycleVersion = "2.7.0"
+gsonVersion = "2.10.1"
+timberVersion = "5.0.1"
+recyclerview = "1.3.2"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+realm-kotlin = { group = "io.realm.kotlin", name = "library-base", version.ref = "realm"}
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt"}
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "daggerHilt"}
+retrofit-base = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit2"}
+retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit2"}
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp"}
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttpAlpha"}
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigstionVersion"}
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigstionVersion"}
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutinesVersion"}
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVersion"}
+viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleVersion"}
+viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycleVersion"}
+livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleVersion"}
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion"}
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timberVersion"}
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+realmKotlin = { id = "io.realm.kotlin", version.ref = "realm"}
+daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt"}
+navigstionSafeArgs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigstionVersion"}
